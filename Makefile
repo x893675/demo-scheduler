@@ -5,3 +5,6 @@ build:
 
 build-image:
 	docker build -t hanamichi/scheduler-sample:latest .
+
+fmt:
+	gofmt -s -w ./plugins ./main.go
